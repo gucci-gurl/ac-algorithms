@@ -40,6 +40,12 @@ console.log(result) // -1
 
 
 function isBigger(a, b) {
-	//Your code here
+	if (a > b) {
+		retrun true;
+	}else if (a < b){
+		retrun false;
+	}else {
+		return 0;
+	}
 	
 }

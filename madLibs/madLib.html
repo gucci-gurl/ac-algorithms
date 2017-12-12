@@ -10,13 +10,25 @@
 	 	<body>
 			 <h1>Mad Libs</h1>
 			 <ul>
-			  	<li>Noun: <input type="text" id="noun">
+			  	<li>Noun: <input type="text" id="noun"> 
 			  	<li>Adjective: <input type="text" id="adjective">
 			  	<li>A Person Name: <input type="text" id="person">
 			 </ul>
 			 <button id="lib-button">Lib it!</button>
-			  
-			 <div id="story"></div>  
+			 
+			 <div id="story"></div>
+
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			
+			
+			 <script>
+				 $("#lib-button").on("click",function(){
+					 var noun = $("#noun").val();
+					 var adjective = $("#adjective").val();
+					 var person = $("#person").val();
+					 $("#story").append("<p>" + person + " likes " + adjective + " " + "</p>");
+				 });
+			 </script> 
 		</body>
 	</html>
 	
