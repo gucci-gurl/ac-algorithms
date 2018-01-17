@@ -30,5 +30,18 @@ console.log(result) // "oH, hELLO!!"
 **/
 
 function swapCase(str) {
-	// Your code
+var	myArray = str.split("");
+var output = "";
+for (var i = 0; i < myArray.length; i++){
+	if(myArray[i] === myArray[i].toUppercase()){
+		output += myArray[i].tolowerCase();
+	} eles {
+		output += myArray[i].toUppercase();
+
+	}
 }
+
+}
+
+var result = swapCase("Hello World")
+console.log(result);
